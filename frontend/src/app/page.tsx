@@ -1,11 +1,18 @@
 "use client"
-import { Clip } from '../stories/Clip'
+import { Header } from '@/stories/Header'
+import { Preview } from '@/stories/Preview'
+import { Clip } from '@/stories/Clip'
 import './index.css'
 
 export default function Home() {
   return (
     <main>
-      <div className="flex-container">
+      <Header />
+      <div className="preview-container">
+        <Preview />
+      </div>
+      <div className="output-container"></div>
+      <div className="clips-container">
         <Clip
           name="clip1"
           video="/test1.mp4"
@@ -39,6 +46,8 @@ export default function Home() {
           video="/test8.mp4"
         />
       </div>
+      <div className="controller"></div>
+      <footer>k2font | complex-ui-playground</footer>
     </main>
   )
 }

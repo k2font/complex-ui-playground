@@ -1,0 +1,10 @@
+.preview {
+  width: 100%;
+  border: #1f1f1f 1px solid;
+}
+
+video {
+  /* コンテンツを中央表示 */
+  display: block;
+  margin: 0 auto;
+}
