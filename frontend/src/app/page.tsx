@@ -1,21 +1,44 @@
 "use client"
-import { Header } from '../stories/Header'
 import { Clip } from '../stories/Clip'
+import './index.css'
 
 export default function Home() {
   return (
     <main>
-      <Header
-        user={{name: "shoichiro"}}
-        onLogin={() => {}}
-        onLogout={() => {}}
-        onCreateAccount={() => {}}
-      />
-      <h1>complex-ui-playground</h1>
-      <Clip
-        name="clip1"
-        video="/test1.mp4"
-      />
+      <div className="flex-container">
+        <Clip
+          name="clip1"
+          video="/test1.mp4"
+        />
+        <Clip
+          name="clip2"
+          video="/test2.mp4"
+        />
+        <Clip
+          name="clip3"
+          video="/test3.mp4"
+        />
+        <Clip
+          name="clip4"
+          video="/test4.mp4"
+        />
+        <Clip
+          name="clip5"
+          video="/test5.mp4"
+        />
+        <Clip
+          name="clip6"
+          video="/test6.mp4"
+        />
+        <Clip
+          name="clip7"
+          video="/test7.mp4"
+        />
+        <Clip
+          name="clip8"
+          video="/test8.mp4"
+        />
+      </div>
     </main>
   )
 }

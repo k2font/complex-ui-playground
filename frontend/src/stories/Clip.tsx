@@ -15,6 +15,7 @@ export const Clip = ({
     <div className='clip'>
       <div className='clip_body'>
         <video
+          loop
           muted
           autoPlay
           playsInline
