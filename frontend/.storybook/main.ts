@@ -21,6 +21,10 @@ const config: StorybookConfig = {
 
   core: {
     disableWhatsNewNotifications: true
-  }
+  },
+
+  staticDirs: [
+    '../public',
+  ]
 };
 export default config;

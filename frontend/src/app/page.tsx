@@ -1,5 +1,6 @@
-import Image from 'next/image'
+"use client"
 import { Header } from '../stories/Header'
+import { Clip } from '../stories/Clip'
 
 export default function Home() {
   return (
@@ -11,6 +12,10 @@ export default function Home() {
         onCreateAccount={() => {}}
       />
       <h1>complex-ui-playground</h1>
+      <Clip
+        name="clip1"
+        video="/test1.mp4"
+      />
     </main>
   )
 }
