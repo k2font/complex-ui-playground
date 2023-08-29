@@ -4,30 +4,37 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
-    "a a a a a a a a"
-    "b b b b c c c c"
-    "b b b b c c c c"
-    "d d d d e e e e"
-    "d d d d e e e e"
-    "f f f f f f f f";
+    "a a a a a a a a a"
+    "b b b c c c g g g"
+    "b b b c c c g g g"
+    "d d d d d e e e e"
+    "d d d d d e e e e"
+    "f f f f f f f f f";
 }
 
 header {
   grid-area: a;
 }
 
-.preview-container {
+.preview1-container {
   grid-area: b;
 }
 
-.output-container {
+.preview2-container {
   grid-area: c;
+}
+
+.output-container {
+  grid-area: g;
 }
 
 .clips-container {
   grid-area: d;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .controller {
@@ -37,10 +44,4 @@ header {
 footer {
   grid-area: f;
   color: white;
-}
-
-.clips-container {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(6, 1fr);
 }
